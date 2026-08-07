@@ -1,13 +1,51 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta />
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="flex items-center w-full bg-black h-[3.75rem] shadow">
+      <!-- Logo -->
+      <div class="flex w-full flex-row items-center justify-between mx-7 text-white">
+        <div class="flex flex-row items-center justify-center gap-2">
+          <img src="assets/images/cloud.png" alt="logo" class="w-7 h-auto" />
+          <h1 class="font-playfair font-bold">Traveler's</h1>
+        </div>
+
+        <!-- List -->
+        <div>
+          <ul class="flex flex-row list-none gap-7 font-lato">
+            <li class=""><a href="#home">Home</a></li>
+            <li class=""><a href="#packages">Packages</a></li>
+            <li class=""><a href="#tours">Tours</a></li>
+            <li class=""><a href="#aboutus">About Us</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Icon -->
+        <div class="flex flex-row gap-5">
+          <i data-lucide="phone" class="w-5 h-auto"></i>
+          <i data-lucide="Mail" class="w-5 h-auto"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- lucide.dev/icons/ Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
