@@ -9,7 +9,9 @@
 /* Nunito Sans requires custom variation-settings that Tailwind
    utilities can't express, so we bake them into the family class */
 .font-nunito {
-  font-variation-settings: "wdth" 100, "YTLC" 500;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 /* Optical sizing (auto by default in modern browsers for variable
