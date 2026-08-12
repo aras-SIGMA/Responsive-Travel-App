@@ -1,4 +1,5 @@
 # Responsive-Travel-App
+
 =-=-=-= Beberapa hal =-=-=-=
 Tailwind V4 adalah versi Tailwind kita
 
@@ -16,6 +17,7 @@ font-lato = sub-head
 font-nunito = paragraph
 
 CONTOH PENGGUNAAN FONTS:
+
 <h1 class="font-playfair font-bold text-4xl">Playfair Bold</h1>
 <h2 class="font-playfair font-medium italic text-2xl">Playfair Medium Italic</h2>
 
