@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --font-playfair: "Playfair Display", serif;
+  --font-lato: "Lato", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+}
+
+/* Nunito Sans requires custom variation-settings that Tailwind
+   utilities can't express, so we bake them into the family class */
+.font-nunito {
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Optical sizing (auto by default in modern browsers for variable
+   fonts with an opsz axis, but set explicitly to match your original CSS) */
+.font-playfair,
+.font-nunito {
+  font-optical-sizing: auto;
+}
