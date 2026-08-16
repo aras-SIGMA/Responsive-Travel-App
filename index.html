@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-   <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta />
@@ -15,17 +15,21 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="flex items-center w-full bg-black h-[3.75rem] shadow">
+    <nav
+      class="flex items-center bg-white/5 border border-white/10 backdrop-blur-sm fixed z-50 w-full h-[3.75rem] shadow-lg"
+    >
       <!-- Logo -->
-      <div class="flex w-full flex-row items-center justify-between mx-7 text-white">
+      <div
+        class="flex w-full flex-row items-center justify-between mx-7 text-white"
+      >
         <div class="flex flex-row items-center justify-center gap-2">
           <img src="assets/images/cloud.png" alt="logo" class="w-7 h-auto" />
-        <h1 class="font-playfair font-bold">Traveler's</h1>
+          <h1 class="font-playfair text-[18px] font-bold">Traveler's</h1>
         </div>
 
         <!-- List -->
         <div>
-          <ul class="flex flex-row list-none gap-7 font-lato">
+          <ul class="flex flex-row list-none gap-7 font-lato font-bold">
             <li class=""><a href="#home">Home</a></li>
             <li class=""><a href="#packages">Packages</a></li>
             <li class=""><a href="#tours">Tours</a></li>
@@ -41,6 +45,186 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-screen">
+      <!-- Image fills the entire viewport -->
+      <img
+        src="/assets/images/beach-view.jpg"
+        alt="Beach view resort"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-white gap"
+      >
+        <div class="flex flex-col gap-2 items-center">
+          <h1 class="text-4xl font-bold font-playfair">
+            Your Dream Vacation Awaits
+          </h1>
+          <h1 class="font-lato italic text-1xl">Explore The World With Us</h1>
+        </div>
+        <div
+          class="flex items-center gap-6 w-140 h-14 mt-4 px-6 bg-white/5 border border-white/10 backdrop-blur-sm shadow-lg rounded-full"
+        >
+          <input
+            type="text"
+            placeholder=" search your destination"
+            class="w-full h-full h-20 border-none outline-none text-white rounded-full"
+          />
+          <button
+            class="px-4 py-2 rounded-2xl bg-white/40 text-black text-sm font-lato font-bold shadow-lg"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center gap-2 mt-11 mx-7 my-12"
+    >
+      <div class="flex flex-col items-center justify-center mb-6">
+        <p class="text-xl font-lato font-medium text-black/40">
+          Best Location
+        </p>
+        <h1 class="text-2xl font-playfair font-bold text-black">
+          Explore the world with Us
+        </h1>
+      </div>
+
+      <div class="flex flex-row gap-3 mt-2">
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/japanPicture.jpg"
+            alt="Japan"
+            class="w-[300px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6 shadow">
+            <p class="text-sm text-white/80">Kyoto, Japan</p>
+
+            <h2 class="text-xl font-semibold text-white">Kyoto Culture Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/prancisPicture.jpg"
+            alt="austria"
+            class="w-[300px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <p class="text-sm text-white/80">Paris, France</p>
+
+            <h2 class="text-xl font-semibold text-white">
+              Arc de Triomphe Tour
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/austriaPicture.jpg"
+            alt="austria"
+            class="w-[520px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <p class="text-sm text-white/80">Wina, Austria</p>
+
+            <h2 class="text-xl font-semibold text-white">
+              Wina street Tourism
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-3 mt-2">
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/amerikaPicture.jpg"
+            alt="american"
+            class="w-[520px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <p class="text-sm text-white/80">New York, American</p>
+
+            <h2 class="text-xl font-semibold text-white">New York City Tour</h2>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/chinaPicture.jpg"
+            alt="China"
+            class="w-[300px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/52 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <p class="text-sm text-white/80">Beijing, China</p>
+
+            <h2 class="text-xl font-semibold text-white">
+              Temple of Heaven Tour
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-xl backdrop-blur-sm shadow-lg overflow-hidden"
+        >
+          <img
+            src="./assets/images/maldivesPicture.jpg"
+            alt="Maldives"
+            class="w-[300px] h-[260px]"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/52 via-black/20 to-transparent"
+          ></div>
+
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <p class="text-sm text-white/80">Maldives Beach</p>
+
+            <h2 class="text-xl font-semibold text-white">
+              Beach Maldives Vacation
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- lucide.dev/icons/ Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
