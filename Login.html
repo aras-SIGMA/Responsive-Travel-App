@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta />
+    <title>Traveler's | Login</title>
     <link href="./src/output.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,20 +12,121 @@
       rel="stylesheet"
     />
   </head>
-<body>
 
+  <body class="bg-[#f5f2ee] font-lato text-slate-800">
 
+    <main class="relative min-h-screen overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+        alt="Beach resort"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
 
+      <div class="relative z-10 flex min-h-screen items-center justify-center px-5 py-24 ">
+        <div class="flex w-full max-w-5xl overflow-hidden rounded-[32px] border border-white/20 bg-white/10 backdrop-blur-xl">
+          <div class="relative hidden w-1/2 lg:block">
+            <img
+              src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80"
+              alt="Maldives vacation"
+              class="h-full w-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/20 to-transparent"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+              <p class="mb-2 text-sm uppercase tracking-[8px] text-white/80">Welcome back</p>
+              <h1 class="font-playfair text-4xl">Plan your next escape.</h1>
+              <p class="mt-3 max-w-xs text-sm text-white">
+                Discover curated destinations, unforgettable stays, and seamless journeys.
+              </p>
+            </div>
+          </div>
 
+          <div class="w-full bg-white/10 p-8 text-white sm:p-10 lg:w-1/2 lg:p-12">
+            <div class="mb-8 flex items-center gap-3">
+              <img src="assets/images/cloud.png" alt="logo" class="h-10 w-10" />
+              <div>
+                <p class="font-playfair text-2xl font-bold leading-none ">Traveler's</p>
+                <p class="text-xs uppercase tracking-[5px] text-white/60">Travel portal</p>
+              </div>
+            </div>
 
+            <div class="mb-8">
+              <p class="text-sm uppercase tracking-[8px] text-cyan-100/80">Login</p>
+              <h2 class="mt-2 font-playfair text-4xl font-bold">Sign in to your account</h2>
+            </div>
 
+            <form class="space-y-5">
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-white/80">Email address</label>
+                <div class="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 shadow-inner shadow-white/5">
+                  <i data-lucide="mail" class="h-4 w-4 text-cyan-100"></i>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    class="w-full border-none bg-transparent text-white placeholder:text-white/50 outline-none"
+                  />
+                </div>
+              </div>
 
+              <div>
+                <div class="mb-2 flex items-center justify-between">
+                  <label for="password" class="text-sm font-medium text-white/85">Password</label>
+                  <a href="#" class="text-sm text-cyan-100 transition hover:text-cyan-50">Forgot?</a>
+                </div>
+                <div class="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 shadow-inner shadow-white/5">
+                  <i data-lucide="lock" class="h-4 w-4 text-cyan-100"></i>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    class="w-full border-none bg-transparent text-white placeholder:text-white/50 outline-none"
+                  />
+                </div>
+              </div>
 
-     <!-- lucide.dev/icons/ Icons -->
+              <div class="flex items-center justify-between text-sm text-white/80">
+                <label class="flex items-center gap-2">
+                  <input type="checkbox" class="h-4 w-4 accent-cyan-400" />
+                  Remember me
+                </label>
+                <span>Need an account?</span>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full rounded-2xl bg-gradient-to-r from-cyan-400 to-sky-400 px-4 py-3 text-base font-bold text-slate-700 shadow-lg shadow-cyan-500/30 transition hover:brightness-110"
+              >
+                Sign in
+              </button>
+            </form>
+
+            <div class="my-6 flex items-center gap-3">
+              <div class="h-px flex-1 bg-white/20"></div>
+              <span class="text-xs uppercase tracking-[8px] text-white/50">or</span>
+              <div class="h-px flex-1 bg-white/20"></div>
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <button class="flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/20">
+                <img src="./assets/images/google.png" alt="" class="h-10 w-10 opacity-80">
+              </button>
+              <button class="flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-medium text-white transition hover:bg-white/20">
+                <img src="./assets/images/instagram.png" alt="" class="h-10 w-10">
+              </button>
+            </div>
+
+            <p class="mt-8 text-center text-sm text-white/75">
+              Don't have an account?
+              <a href="#" class="ml-1 font-semibold text-cyan-100 hover:text-white">Create account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
       lucide.createIcons();
     </script>
-    
-</body>
+  </body>
 </html>
